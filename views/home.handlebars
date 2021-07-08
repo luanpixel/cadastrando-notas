@@ -1,0 +1,12 @@
+<h1>lista de posts</h1>
+
+<a href="javascript:history.go(-1)"><button>Adicionar nova nota</button></a>
+</br>
+{{#each posts}}
+<small>{{dataValues.createdAt}}</small>
+<h1>{{dataValues.titulo}}</h1>
+<p>{{dataValues.conteudo}}</p>
+<a href="/deletar/{{dataValues.id}}"><button>DELETAR</button></a>
+
+<hr>
+{{/each}}
